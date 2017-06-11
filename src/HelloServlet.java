@@ -13,8 +13,10 @@ public class HelloServlet extends HttpServlet{
     public  void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException
     {
         PrintWriter printWriter=response.getWriter();
-        String message="Hello Servlet! Comert Baldemir";
+        printWriter.write("<html><body>"); // Burada html body etiketlerini açıyoruz.
+        String message="<h2> Hello Servlet! Comert Baldemir </h2>";
         printWriter.write(message);
+printWriter.write("</body></html>");// Burada da kapatıyoruz etiketleri.
 
     }
 
