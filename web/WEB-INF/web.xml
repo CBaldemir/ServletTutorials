@@ -11,4 +11,20 @@
     <servlet-name>FirstServlet</servlet-name>
     <url-pattern>/hello</url-pattern>
 </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletConfig</servlet-name>
+        <servlet-class>ServletConfigClass</servlet-class>
+        <init-param>
+            <param-name>Comert</param-name>
+            <param-value>Comert Baldemir</param-value>
+        </init-param>
+        <init-param>
+            <param-name>Fatih</param-name>
+            <param-value>Fatih Baldemir</param-value>
+        </init-param>
+    </servlet>
+<servlet-mapping>
+    <servlet-name>ServletConfig</servlet-name>
+    <url-pattern>/servletconfig</url-pattern>
+</servlet-mapping>
 </web-app>
