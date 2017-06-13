@@ -27,4 +27,20 @@
     <servlet-name>ServletConfig</servlet-name>
     <url-pattern>/servletconfig</url-pattern>
 </servlet-mapping>
+<context-param>
+    <param-name>Ad</param-name>
+    <param-value>Comert</param-value>
+</context-param>
+    <context-param>
+        <param-name>E-mail</param-name>
+        <param-value>comertbaldemir@gmail.com</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>ServletContextClass</servlet-name>
+        <servlet-class>ServletContextClass</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletContextClass</servlet-name>
+        <url-pattern>/ServletContextClass</url-pattern>
+    </servlet-mapping>
 </web-app>
