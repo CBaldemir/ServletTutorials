@@ -43,4 +43,12 @@
         <servlet-name>ServletContextClass</servlet-name>
         <url-pattern>/ServletContextClass</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ReadingFileServlet</servlet-name>
+        <servlet-class>ReadingFileWithServletContext</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReadingFileServlet</servlet-name>
+        <url-pattern>/ReadingFileServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
