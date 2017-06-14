@@ -12,9 +12,9 @@ import java.io.PrintWriter;
 public class RequestTutorial extends HttpServlet {
 
     @Override
-    public  void doPost(HttpServletRequest request, HttpServletResponse response)throws IOException{
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 //doGet ile işlem yaptığımızda html deki verileri url üzerinden taşır, bu da güvenli olmaz, post ile taşımak daha güvenlidir.
-        PrintWriter printWriter=response.getWriter();
+        PrintWriter printWriter = response.getWriter();
         printWriter.write("<html><body>");
         printWriter.write(request.getParameter("firstName"));
         printWriter.write("<br>");
@@ -22,11 +22,11 @@ public class RequestTutorial extends HttpServlet {
         printWriter.write("<br>");
         printWriter.write(request.getParameter("marialStatus"));
         printWriter.write("<br>");
-        String [] parameterlist=request.getParameterValues("proLang");
-        for (int i=0;i<parameterlist.length;i++)
-        {
+        String[] parameterlist = request.getParameterValues("proLang");
+        for (int i = 0; i < parameterlist.length; i++) {
             printWriter.write(parameterlist[i]);
             printWriter.write("<br>");
         }
+        printWriter.write("</body></html>");
     }
 }
