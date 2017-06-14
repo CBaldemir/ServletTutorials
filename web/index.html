@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RequestExample</title>
+</head>
+<body>
+<form action="/RequestTutorial" method="post">
+    <!-- get ile veri taşıdığımızda verileri url ile taşıdığından web satırına baktığımızda neler taşındığını görebiliriz.
+    Bu da bizim için güvenli olmaz, post ile taşıdığımızda veriler daha gizli taşınır, get e göre daha güvenlidir.
+    -->
+<table>
+    <tr>
+
+        <td>İsim<input type="text" name="firstName"></td>
+    </tr>
+    <tr>
+
+        <td>Soyisim<input type="text" name="surName"></td>
+    </tr>
+    <tr>
+        <td>Bekar<input type="radio" value="Bekar" name="marialStatus"></td>
+        <td>Evli<input type="radio" value="Evli" name="marialStatus"></td>
+    </tr>
+    <tr>
+        <td>Java<input type="checkbox" value="Java" name="proLang"></td>
+        <td>C#<input type="checkbox" value="C#" name="proLang"></td>
+        <td>Python<input type="checkbox" value="Python" name="proLang"></td>
+        <td>Ruby<input type="checkbox" value="Ruby"  name="proLang"></td>
+    </tr>
+
+</table>
+<input type="submit" value="Gönder">
+</form>
+</body>
+</html>
